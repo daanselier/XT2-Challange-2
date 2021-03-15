@@ -4,9 +4,13 @@ function klok() {
     var minutes = today.getMinutes();
     var hours = today.getHours();
 
-    //if (hours >= 9 && hours < 21) {
-    //    document.getElementById('id').classList.add 
-    //}
+    if (hours >= 9 && hours < 21) {
+        document.getElementById('clock').classList.remove('nacht');
+        document.getElementById('clock').classList.add('day');
+    } else {
+        document.getElementById('clock').classList.remove('day');
+        document.getElementById('clock').classList.add('night');
+    }
 
     if (seconds < 10) {
         seconds = '0' + seconds;

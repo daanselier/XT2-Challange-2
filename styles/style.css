@@ -4,6 +4,23 @@ body{
     margin: 0;
 }
 
+#spacexLogo{
+    width: auto;
+    height: 20px;
+}
+
+header{
+    margin-left: 4%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#marsLogo{
+    width: auto;
+    height: 20px;
+    margin: 0;
+}
+
 @media only screen and (min-width: 768px) {
 }
 
