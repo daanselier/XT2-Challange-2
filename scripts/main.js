@@ -5,7 +5,7 @@ function klok() {
     var hours = today.getHours();
 
     if (hours >= 9 && hours < 21) {
-        document.getElementById('clock').classList.remove('nacht');
+        document.getElementById('clock').classList.remove('night');
         document.getElementById('clock').classList.add('day');
     } else {
         document.getElementById('clock').classList.remove('day');
