@@ -7,9 +7,11 @@ function klok() {
     if (hours >= 9 && hours < 21) {
         document.getElementById('clock').classList.remove('night');
         document.getElementById('clock').classList.add('day');
+        document.body.style.backgroundColor = "#e0e0e0";
     } else {
         document.getElementById('clock').classList.remove('day');
         document.getElementById('clock').classList.add('night');
+        document.body.style.backgroundColor = "#2F3136";
     }
 
     if (seconds < 10) {

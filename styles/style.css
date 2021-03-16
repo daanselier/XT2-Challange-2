@@ -21,6 +21,41 @@ header{
     margin: 0;
 }
 
+#clock{
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.day{
+    color: black;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+.night{
+    color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #2a2c31, #32343a);
+    box-shadow:  20px 20px 40px #26272b,
+                 -20px -20px 40px #383b41;
+}
+
 @media only screen and (min-width: 768px) {
 }
 
