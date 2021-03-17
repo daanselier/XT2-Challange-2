@@ -22,7 +22,7 @@ function klok() {
         minutes = '0' + minutes;
     }
 
-    document.getElementById('clock').innerHTML = today.getHours() + ':' + minutes + ':' + seconds;
+    document.getElementById('clock').innerHTML = 'Tijd: ' + today.getHours() + ':' + minutes + ':' + seconds;
 }
 
 function datum() {
@@ -40,11 +40,11 @@ function datum() {
         document.getElementById('date').classList.add('night');
     }
 
-    document.getElementById('date').innerHTML = today.getDate() + ' ' + maanden[today.getMonth()];
+    document.getElementById('date').innerHTML = 'Datum: ' + today.getDate() + ' ' + maanden[today.getMonth()] + ' ' + today.getFullYear();
 }
 
 klok();
 setInterval(klok, 1000);
 
 datum();
-setInterval(datum, 100000);
+setInterval(datum, 1000);
