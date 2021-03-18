@@ -4,7 +4,7 @@ function klok() {
     var minutes = today.getMinutes();
     var hours = today.getHours();
 
-    if (hours >= 9 && hours < 21) {
+    if (hours >= 9 && hours < 20) {
         document.getElementById('clock').classList.remove('night');
         document.getElementById('clock').classList.add('day');
         document.body.style.backgroundColor = "#e0e0e0";
@@ -32,7 +32,7 @@ function datum() {
     var hours = today.getHours();
     var maanden = new Array('januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december');
 
-    if (hours >= 9 && hours < 21) {
+    if (hours >= 9 && hours < 20) {
         document.getElementById('date').classList.remove('night');
         document.getElementById('date').classList.add('day');
     } else {
